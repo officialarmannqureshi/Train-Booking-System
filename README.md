@@ -182,8 +182,8 @@ The application will connect to PostgreSQL and automatically create the required
       {
         "train_id": 1,
         "train_number": 12345,
-        "source_station": "MUMBAI",
-        "destination_station": "DELHI",
+        "source_station": "DELHI",
+        "destination_station": "BANGALORE",
         "total_seats": 100,
         "available_seats": 50
       }
@@ -252,13 +252,13 @@ The system returns appropriate HTTP status codes and error messages:
 - **500**: Internal server error (e.g., database issues).
 
 Example Error Response:
-\`\`\`json
+```
 {
   "success": false,
   "message": "Error booking the ticket",
   "error": "Train not found"
 }
-\`\`\`
+```
 
 ## License
 Resources Used: GfG, StackOverflow and Medium
