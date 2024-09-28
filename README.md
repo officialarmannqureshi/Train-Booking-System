@@ -79,8 +79,15 @@ The application will connect to PostgreSQL and automatically create the required
 
 
 ## API Endpoints
-
 ### 1. Register User
+- **Endpoint**: `/api/v1/` or `/`
+- **Method**: `GET`
+- **Description**: Fetches a API Documentation - Train Booking System
+
+![alt text](image.png)
+
+
+### 2. Register User
 - **Endpoint**: `/api/v1/register`
 - **Method**: `POST`
 - **Description**: Creates a new user account.
@@ -100,7 +107,7 @@ The application will connect to PostgreSQL and automatically create the required
   }
   ```
 
-### 2. Login User
+### 3. Login User
 - **Endpoint**: `/api/v1/login`
 - **Method**: `GET`
 - **Description**: Logs in the user and generates an authentication token.
@@ -120,7 +127,7 @@ The application will connect to PostgreSQL and automatically create the required
   }
   ```
 
-### 3. Logout User
+### 4. Logout User
 - **Endpoint**: `/api/v1/logout`
 - **Method**: `GET`
 - **Description**: Logs out the current user and invalidates the authentication token.
@@ -132,7 +139,7 @@ The application will connect to PostgreSQL and automatically create the required
   }
   ```
 
-### 4. Add Train (Admin Only)
+### 5. Add Train (Admin Only)
 - **Endpoint**: `/api/v1/admin/add-train`
 - **Method**: `POST`
 - **Description**: Adds a new train to the system. Only accessible to admins.
@@ -153,7 +160,7 @@ The application will connect to PostgreSQL and automatically create the required
   }
   ```
 
-### 5. Get Seat Availability
+### 6. Get Seat Availability
 - **Endpoint**: `/api/v1/getSeatAvailability`
 - **Method**: `GET`
 - **Description**: Fetches available trains between a source and destination.
@@ -182,7 +189,7 @@ The application will connect to PostgreSQL and automatically create the required
   }
   ```
 
-### 6. Book a Seat
+### 7. Book a Seat
 - **Endpoint**: `/api/v1/bookSeat`
 - **Method**: `POST`
 - **Description**: Books a seat for a user on a specific train. The system automatically updates the seat availability and manages booking status.

@@ -17,7 +17,9 @@ global.configDB()
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(process.cwd(), 'home.html'));
+    /* The line `res.sendFile(path.join(process.cwd(), 'README.md'));` is sending the file `README.md`
+    as a response when a GET request is made to the root route `/`. */
+    res.sendFile(path.join(process.cwd(), 'api-docs.html'));
 })
 
 app.use('/api/v1',otherRoutes);
