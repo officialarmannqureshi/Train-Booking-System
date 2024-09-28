@@ -94,8 +94,8 @@ The application will connect to PostgreSQL and automatically create the required
 - **Request Body**:
   ```json
   {
-    "username": "john_doe",
-    "email": "john@example.com",
+    "username": "Nazim Qureshi",
+    "email": "nazim@example.com",
     "password": "password123"
   }
   ```
@@ -114,7 +114,7 @@ The application will connect to PostgreSQL and automatically create the required
 - **Request Query**:
   ```json
   {
-    "username": "john_doe",
+    "username": "hecodeit",
     "password": "password123"
   }
   ```
@@ -147,8 +147,8 @@ The application will connect to PostgreSQL and automatically create the required
   ```json
   {
     "train_number": 12345,
-    "source_station": "Station A",
-    "destination_station": "Station B",
+    "source_station": "Mumbai",
+    "destination_station": "Lucknow",
     "total_seats": 100
   }
   ```
@@ -167,8 +167,8 @@ The application will connect to PostgreSQL and automatically create the required
 - **Request Body**:
   ```json
   {
-    "source_station": "Station A",
-    "destination_station": "Station B"
+    "source_station": "DELHI",
+    "destination_station": "BANGALORE"
   }
   ```
 - **Response** (on success):
@@ -180,8 +180,8 @@ The application will connect to PostgreSQL and automatically create the required
       {
         "train_id": 1,
         "train_number": 12345,
-        "source_station": "Station A",
-        "destination_station": "Station B",
+        "source_station": "MUMBAI",
+        "destination_station": "DELHI",
         "total_seats": 100,
         "available_seats": 50
       }
@@ -197,8 +197,8 @@ The application will connect to PostgreSQL and automatically create the required
   ```json
   {
     "train_number": 12345,
-    "source_station": "Station A",
-    "destination_station": "Station B"
+    "source_station": "MUMBAI",
+    "destination_station": "CHANDIGARH"
   }
   ```
 - **Response** (on success):
