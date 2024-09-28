@@ -39,15 +39,15 @@ Ensure you have the following installed:
 ## Installation
 
 ### 1. Clone the Repository
-\`\`\`bash
+```
 git clone <repository-url>
 cd train-booking-system
-\`\`\`
+```
 
 ### 2. Install Dependencies
-\`\`\`bash
+```
 npm install
-\`\`\`
+```
 
 ### 3. Set Up PostgreSQL Database
 Ensure PostgreSQL is installed and running on your machine. Set up your database and configure the credentials in the `.env` file.
@@ -55,31 +55,33 @@ Ensure PostgreSQL is installed and running on your machine. Set up your database
 ### 4. Create `.env` File
 Create a `.env` file in the root directory with the following keys:
 
-\`\`\`bash
+
 # PostgreSQL Configuration
+```
 POSTGRES_USER=your_postgres_username
 POSTGRES_PASSWORD=your_postgres_password
 DATABASE_NAME=your_database_name
 POSTGRES_HOST=localhost
 POSTGRES_PORT=5432
 PORT=7000
-
+```
 
 # JWT Secret Keys
+```
 JWT_SECRET_KEY=your_jwt_secret_key
 JWT_ADMIN_SECRET_KEY=your_admin_jwt_secret_key
-\`\`\`
+```
 
 ### 5. Database Setup and Migration
 Once the database is ready and environment variables are set, run the app to create tables and migrate the schema:
-\`\`\`bash
+```
 npm start
-\`\`\`
+```
 The application will connect to PostgreSQL and automatically create the required tables such as \`users\`, \`train\`, \`booking\`, and \`blacklist\`.
 
 
 ## API Endpoints
-### 1. Register User
+### 1. ROOT : API DOC
 - **Endpoint**: `/api/v1/` or `/`
 - **Method**: `GET`
 - **Description**: Fetches a API Documentation - Train Booking System
