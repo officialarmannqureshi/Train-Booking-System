@@ -38,7 +38,9 @@ Ensure you have the following installed:
 - **Node.js** (v14.x or higher)
 - **PostgreSQL** (v12.x or higher)
 - **Postman** or any API testing tool to test the API endpoints.
-
+- **Nodemon** utility depended on about 3 million projects, that will monitor for any changes in your source and automatically restart your server.
+- **JWT** type of token-based authentication method frequently used in web applications.
+- **Bcrypt** password hashing and verification algorithm designed to securely store passwords in a database.
 ## Installation
 
 ### 1. Clone the Repository
