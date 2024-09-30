@@ -1,6 +1,9 @@
 
 # Train Booking System
 
+![Booking System Design (2)](https://github.com/user-attachments/assets/c0cb1435-4599-4f74-915d-42cb66910b43)
+
+
 ## Overview
 The **Train Booking System** is a RESTful API built using Node.js and PostgreSQL that allows users to:
 - Check seat availability on trains between a given source and destination.
